@@ -35,7 +35,6 @@ class BlankFragment : Fragment() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1) {
             if (resultCode == Activity.RESULT_OK) {
                 val bitmap: Bitmap = data?.extras?.get("data") as Bitmap
